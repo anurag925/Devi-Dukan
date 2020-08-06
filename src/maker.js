@@ -10,7 +10,7 @@ import networkConfig from './references/config';
 import { networkNameToId } from './utils/network';
 import { getQueryParamByName } from './utils/dev';
 
-import maticAddresses from "./references/contracts/matic";
+import maticAddresses from './references/contracts/matic';
 import rinkebyAddresses from './references/contracts/rinkeby';
 import goerliAddresses from './references/contracts/goerli';
 import ropstenAddresses from './references/contracts/ropsten';
