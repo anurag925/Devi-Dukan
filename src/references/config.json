@@ -1,5 +1,5 @@
 {
-  "supportedNetworkIds": ["1337", "999", "5", "4", "3", "42", "1"],
+  "supportedNetworkIds": ["1337", "999", "5", "4", "3", "42", "1","80001"],
   "rpcUrls": {
     "1": "https://mainnet.infura.io/v3/58073b4a32df4105906c702f167b91d2",
     "42": "https://kovan.infura.io/v3/58073b4a32df4105906c702f167b91d2",
@@ -7,14 +7,16 @@
     "4": "https://rinkeby.infura.io/v3/58073b4a32df4105906c702f167b91d2",
     "5": "https://goerli.infura.io/v3/58073b4a32df4105906c702f167b91d2",
     "999": "http://localhost:2000",
-    "1337": "http://localhost:2000"
+    "1337": "http://localhost:2000",
+    "80001":  "https://rpc-mumbai.matic.today"
   },
   "wsRpcUrls": {
     "1": "wss://mainnet.infura.io/ws/v3/58073b4a32df4105906c702f167b91d2",
     "42": "wss://kovan.infura.io/ws/v3/58073b4a32df4105906c702f167b91d2",
     "3": "wss://ropsten.infura.io/ws/v3/58073b4a32df4105906c702f167b91d2",
     "4": "wss://rinkeby.infura.io/ws/v3/58073b4a32df4105906c702f167b91d2",
-    "5": "wss://goerli.infura.io/ws/v3/58073b4a32df4105906c702f167b91d2"
+    "5": "wss://goerli.infura.io/ws/v3/58073b4a32df4105906c702f167b91d2",
+    "80001":  "wss://mumbai-dagger.matic.today"
   },
   "networkNames": {
     "1": "mainnet",
@@ -23,7 +25,8 @@
     "4": "rinkeby",
     "5": "goerli",
     "999": "testnet",
-    "1337": "testnet"
+    "1337": "testnet",
+    "80001":  "matic"
   },
   "networkDisplayNames": {
     "1": "Mainnet",
@@ -32,7 +35,8 @@
     "4": "Rinkeby Testnet",
     "5": "Goerli Testnet",
     "999": "Testchain",
-    "1337": "Ex_Testchain"
+    "1337": "Ex_Testchain",
+    "80001":"Matic Mumbai"
   },
   "defaultNetwork": "1",
   "exTestchainApiUrl": "http://localhost:4000/chain",

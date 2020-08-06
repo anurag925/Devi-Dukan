@@ -10,6 +10,7 @@ import networkConfig from './references/config';
 import { networkNameToId } from './utils/network';
 import { getQueryParamByName } from './utils/dev';
 
+import maticAddresses from "./references/contracts/matic";
 import rinkebyAddresses from './references/contracts/rinkeby';
 import goerliAddresses from './references/contracts/goerli';
 import ropstenAddresses from './references/contracts/ropsten';
@@ -22,7 +23,8 @@ const otherNetworksOverrides = [
     contracts: rinkebyAddresses
   },
   { network: 'goerli', contracts: goerliAddresses },
-  { network: 'ropsten', contracts: ropstenAddresses }
+  { network: 'ropsten', contracts: ropstenAddresses },
+  { network: 'matic', contracts: maticAddresses }
 ].reduce((acc, { network, contracts }) => {
   for (const [contractName, contractAddress] of Object.entries(contracts)) {
     if (!acc[contractName]) acc[contractName] = {};
