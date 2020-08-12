@@ -186,7 +186,7 @@ const CDPCreateConfirmed = ({ hash, isFirstVault, onClose, txState }) => {
   const [waitTime, setWaitTime] = useState('8 minutes');
 
   const networkId = maker.service('web3').networkId();
-  console.log("CDP  "+networkId);
+  console.log('CDP  ' + networkId);
   const isTestchain = ![1, 42].includes(networkId);
   useEffect(() => {
     (async () => {
