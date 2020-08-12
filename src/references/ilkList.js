@@ -32,7 +32,7 @@ export default [
     key: 'USDC-B',
     gem: 'USDC',
     currency: USDC,
-    networks: ['kovan', 'mainnet'],
+    networks: ['kovan', 'mainnet',"matic"],
     decimals: 6
   },
   {
@@ -41,7 +41,7 @@ export default [
     key: 'WBTC-A',
     gem: 'WBTC',
     currency: WBTC,
-    networks: ['kovan', 'mainnet'],
+    networks: ['kovan', 'mainnet',"matic"],
     decimals: 8
   },
   {
@@ -50,7 +50,7 @@ export default [
     key: 'TUSD-A',
     gem: 'TUSD',
     currency: TUSD,
-    networks: ['kovan', 'mainnet']
+    networks: ['kovan', 'mainnet',"matic"]
   },
   {
     slug: 'knc-a',
@@ -58,7 +58,7 @@ export default [
     key: 'KNC-A',
     gem: 'KNC',
     currency: KNC,
-    networks: ['mainnet', 'kovan']
+    networks: ['mainnet', 'kovan',"matic"]
   },
   {
     slug: 'zrx-a',
@@ -66,6 +66,6 @@ export default [
     key: 'ZRX-A',
     gem: 'ZRX',
     currency: ZRX,
-    networks: ['mainnet', 'kovan']
+    networks: ['mainnet', 'kovan',"matic"]
   }
 ];

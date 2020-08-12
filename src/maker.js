@@ -44,7 +44,8 @@ export async function instantiateMaker({
   testchainId,
   backendEnv
 }) {
-  const addressOverrides = ['rinkeby', 'ropsten', 'goerli'].some(
+  console.log(network);
+  const addressOverrides = ['rinkeby', 'ropsten', 'goerli','matic'].some(
     networkName => networkName === network
   )
     ? otherNetworksOverrides
@@ -58,6 +59,7 @@ export async function instantiateMaker({
   const walletLinkPluginConfig = {
     rpcUrl: networkConfig.rpcUrls[networkNameToId(network)]
   };
+
 
   const config = {
     log: false,
@@ -103,7 +105,8 @@ export async function instantiateMaker({
     if (!rpcUrl) throw new Error(`Unsupported network: ${network}`);
     config.provider.url = rpcUrl;
   }
-
+  console.log("maker");
+  console.log(rpcUrl);
   const maker = await Maker.create('http', config);
 
   // for debugging

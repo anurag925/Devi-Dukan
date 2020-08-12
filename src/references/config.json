@@ -16,7 +16,7 @@
     "3": "wss://ropsten.infura.io/ws/v3/58073b4a32df4105906c702f167b91d2",
     "4": "wss://rinkeby.infura.io/ws/v3/58073b4a32df4105906c702f167b91d2",
     "5": "wss://goerli.infura.io/ws/v3/58073b4a32df4105906c702f167b91d2",
-    "80001":  "wss://mumbai-dagger.matic.today"
+    "80001":  "wss://ws-mumbai.matic.today"
   },
   "networkNames": {
     "1": "mainnet",
@@ -41,7 +41,7 @@
   "defaultNetwork": "1",
   "exTestchainApiUrl": "http://localhost:4000/chain",
   "showFeeds": ["ETH", "BAT", "USDC", "WBTC", "TUSD"],
-  "showWalletTokens": ["DAI", "DSR", "ETH", "SAI", "WETH", "BAT", "USDC", "WBTC", "TUSD", "KNC", "ZRX"],
+  "showWalletTokens": ["DAI", "DSR", "ETH", "WETH", "BAT", "USDC", "WBTC", "TUSD", "KNC", "ZRX"],
   "trackingPages": {
     "Overview": "Overview",
     "CDP": "Dashboard",

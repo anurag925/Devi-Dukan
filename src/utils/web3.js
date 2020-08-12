@@ -13,6 +13,8 @@ export const wallets = {
 };
 
 export function getWebClientProviderName() {
+  console.log("web333")
+  console.log(window.web3.currentProvider.isMetaMask);
   if (window.imToken) return wallets.IMTOKEN;
 
   if (!window.web3 || typeof window.web3.currentProvider === 'undefined')

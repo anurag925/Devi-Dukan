@@ -73,7 +73,7 @@ export async function checkEthereumProvider() {
   } else {
     throw new Error('No web3 provider detected');
   }
-
+  console.log("ethereum  "+provider);
   const web3 = new Web3(provider);
   const networkId = await web3.eth.net.getId();
   const address = (await web3.eth.getAccounts())[0];
